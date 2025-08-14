@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Heart, ArrowLeft, Code, Users, Star, Award } from "lucide-react";
+import { Heart, ArrowLeft, Code, Users, Star, Award, RocketIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 
