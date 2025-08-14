@@ -226,6 +226,11 @@ const Dashboard = () => {
     ? calculateProgramSchedule(user.registrationDate) 
     : null;
 
+  // Format registration and estimated finish dates
+  const registrationDate = user?.registrationDate ? new Date(user.registrationDate) : new Date();
+  const estimatedFinishDate = new Date(registrationDate.getTime() + 8 * 7 * 24 * 60 * 60 * 1000);
+  const formatDate = (date: Date) => date.toLocaleDateString() + ' ' + date.toLocaleTimeString();
+
   const renderActiveSection = () => {
     switch (activeSection) {
       case "weekly-program":
@@ -276,6 +281,16 @@ const Dashboard = () => {
 
       <main className="container mx-auto px-6 py-8">
         <WelcomeSection user={user} />
+
+        {/* Registration and Estimated Finish Dates */}
+        <div className="mb-6 flex flex-col md:flex-row md:items-center md:gap-8 text-gray-700">
+          <div>
+            <span className="font-semibold">Registration Date:</span> {formatDate(registrationDate)}
+          </div>
+          <div>
+            <span className="font-semibold">Estimated Finish Date:</span> {formatDate(estimatedFinishDate)}
+          </div>
+        </div>
         
         {programSchedule && (
           <div className="mt-6">
