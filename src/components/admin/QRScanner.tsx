@@ -128,7 +128,7 @@ const QRScanner = () => {
       if (!match) {
         toast({
           title: "Invalid QR Code",
-          description: "This doesn't appear to be a valid PlutoDev verification code",
+          description: "This doesn't appear to be a valid CodeSisters verification code",
           variant: "destructive",
         });
         setLoading(false);
@@ -230,7 +230,7 @@ const QRScanner = () => {
       // Header
       pdf.setFontSize(20);
       pdf.setTextColor(59, 130, 246); // Blue color
-      pdf.text('PlutoDev Student Verification Report', pageWidth / 2, 30, { align: 'center' });
+      pdf.text('CodeSisters Student Verification Report', pageWidth / 2, 30, { align: 'center' });
       
       pdf.setFontSize(12);
       pdf.setTextColor(0, 0, 0);
@@ -294,7 +294,7 @@ const QRScanner = () => {
       // Footer
       pdf.setFontSize(8);
       pdf.setTextColor(128, 128, 128);
-      pdf.text('This is an official verification document from PlutoDev', pageWidth / 2, pageHeight - 20, { align: 'center' });
+      pdf.text('This is an official verification document from CodeSisters', pageWidth / 2, pageHeight - 20, { align: 'center' });
       pdf.text('For verification: planet-participation-hub.lovable.app', pageWidth / 2, pageHeight - 10, { align: 'center' });
 
       // Save the PDF

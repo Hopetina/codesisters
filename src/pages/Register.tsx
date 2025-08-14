@@ -113,7 +113,7 @@ const Register = () => {
           <a href="/" className="inline-flex items-center gap-2 mb-6 hover:opacity-80 transition-opacity">
             <RocketIcon className="h-8 w-8 text-purple-600" />
             <span className="text-2xl font-semibold bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-500 text-transparent bg-clip-text">
-              PlutoDev
+              CodeSisters
             </span>
           </a>
           <h1 className="text-3xl font-semibold tracking-tight">Create Account</h1>

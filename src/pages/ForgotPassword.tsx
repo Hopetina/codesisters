@@ -165,7 +165,7 @@ const ForgotPassword = () => {
           <a href="/" className="inline-flex items-center gap-2 mb-6 hover:opacity-80 transition-opacity">
             <ThermometerSnowflake className="h-8 w-8 text-blue-500" />
             <span className="text-2xl font-semibold bg-gradient-to-r from-blue-500 via-blue-400 to-blue-300 text-transparent bg-clip-text">
-              PlutoDev
+              CodeSisters
             </span>
           </a>
           <h1 className="text-3xl font-semibold tracking-tight">Reset Password</h1>

@@ -27,7 +27,7 @@ const Login = () => {
   const { toast } = useToast();
 
   const loadingTips = [
-    "🚀 Welcome back to PlutoDev! Your coding journey continues...",
+    "🚀 Welcome back to CodeSisters! Your coding journey continues...",
     "💡 Pro Tip: Check out the Community Showcase for inspiration from fellow developers!",
     "⭐ Quick Reminder: Complete weekly challenges to earn bonus points and climb the leaderboard!",
     "🏆 Fun Fact: Our top students average 150+ points per week through consistent engagement!",
@@ -207,7 +207,7 @@ const Login = () => {
             <div className="h-full bg-gradient-to-r from-purple-400 to-pink-400 rounded-full animate-pulse"></div>
           </div>
           <div className="max-w-md mx-auto bg-gradient-to-r from-blue-50 to-purple-50 p-4 rounded-lg border-l-4 border-purple-400">
-            <div className="text-sm font-medium text-purple-700 mb-2">💡 PlutoDev Tip</div>
+            <div className="text-sm font-medium text-primary mb-2">💡 CodeSisters Sister Tip</div>
             <p className="text-gray-700 text-sm leading-relaxed transition-all duration-300">
               {loadingTips[currentTip]}
             </p>
@@ -226,7 +226,7 @@ const Login = () => {
           <a href="/" className="inline-flex items-center gap-2 mb-6 hover:opacity-80 transition-opacity">
             <RocketIcon className="h-8 w-8 text-purple-600" />
             <span className="text-2xl font-semibold bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-500 text-transparent bg-clip-text">
-              PlutoDev
+              CodeSisters
             </span>
           </a>
           <h1 className="text-3xl font-semibold tracking-tight">Welcome Back</h1>

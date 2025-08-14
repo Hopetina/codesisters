@@ -124,7 +124,7 @@ const DigitalIDCard = ({ user, submissions }: DigitalIDCardProps) => {
           </div>
           <div>
             <h2 className="text-xl font-bold">Professional Digital Credential</h2>
-            <p className="text-blue-100 text-sm font-medium">PlutoDev AI Development Program</p>
+            <p className="text-pink-100 text-sm font-medium">CodeSisters Tech Development Program</p>
           </div>
         </CardTitle>
       </CardHeader>
@@ -297,7 +297,7 @@ const DigitalIDCard = ({ user, submissions }: DigitalIDCardProps) => {
                         {user.profile?.course || "AI Development Program Graduate"}
                       </p>
                       <p className="text-sm text-gray-600 bg-gray-50 px-4 py-2 rounded-lg">
-                        ✓ Verified by PlutoDev • Digital Skills Certified
+                        ✓ Verified by CodeSisters • Tech Skills Certified
                       </p>
                     </div>
                     <Button 

@@ -20,7 +20,7 @@ const ChatbotFAQ = () => {
   const [messages, setMessages] = useState([
     {
       type: "bot",
-      content: "Hi! I'm your AI assistant. How can I help you learn more about PlutoDev?",
+      content: "Hi! I'm your AI assistant. How can I help you learn more about CodeSisters?",
     },
   ]);
   const [input, setInput] = useState("");
@@ -50,7 +50,7 @@ const ChatbotFAQ = () => {
         "What programming languages do you teach?": "We teach Python, JavaScript, React, Node.js, and AI/ML frameworks like TensorFlow and PyTorch. Our curriculum is designed to give you hands-on experience with the most in-demand technologies.",
         "How do I get started with AI development?": "Start with our foundational courses in Python and mathematics. Then progress to our AI/ML modules covering machine learning basics, neural networks, and practical AI applications. We provide step-by-step guidance throughout your journey.",
         "What are the course requirements?": "No prior programming experience required! We start from the basics. You'll need a computer with internet access and dedication to practice. Our self-paced learning allows you to progress at your own speed.",
-        "Tell me about the certification process": "Complete all course modules, submit projects, and pass our assessments to earn your PlutoDev certification. Our certificates are recognized by industry partners and demonstrate your practical coding skills.",
+        "Tell me about the certification process": "Complete all course modules, submit projects, and pass our assessments to earn your CodeSisters certification. Our certificates are recognized by industry partners and demonstrate your practical coding skills.",
         "How long does it take to complete?": "Our program typically takes 6-12 months depending on your pace and schedule. With our flexible learning approach, you can study part-time while working or studying full-time for faster completion.",
         "What support do you provide?": "We offer 24/7 AI-powered assistance, mentor sessions, peer learning communities, and dedicated support channels. You're never alone in your learning journey with us!",
       };
@@ -101,7 +101,7 @@ const ChatbotFAQ = () => {
           <div className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white p-4 rounded-t-lg">
             <div className="flex items-center gap-2">
               <Bot className="h-5 w-5" />
-              <span className="font-semibold">PlutoDev AI Assistant</span>
+              <span className="font-semibold">CodeSisters AI Assistant</span>
               <Sparkles className="h-4 w-4 ml-auto animate-pulse" />
             </div>
           </div>
