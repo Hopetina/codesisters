@@ -1,61 +1,79 @@
 
-import { RocketIcon, Github, Linkedin, Globe } from "lucide-react";
+import { Heart, Github, Linkedin, Instagram, Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-8 md:py-12">
+    <footer className="bg-gradient-to-r from-primary/10 to-accent/10 border-t border-primary/20 py-12 md:py-16">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           <div className="text-center md:text-left">
             <div className="flex items-center justify-center md:justify-start space-x-2 mb-4">
-              <RocketIcon className="w-6 h-6 text-purple-400" />
-              <span className="text-xl font-bold bg-gradient-to-r from-purple-400 to-indigo-400 text-transparent bg-clip-text">
-                PlutoDev
+              <Heart className="w-6 h-6 text-primary" />
+              <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent text-transparent bg-clip-text">
+                CodeSisters
               </span>
             </div>
-            <p className="text-gray-400">Shaping the future of coding education</p>
+            <p className="text-muted-foreground leading-relaxed">
+              Empowering women in tech through community, mentorship, and sisterhood. 
+              Together we code, together we rise.
+            </p>
           </div>
           <div className="text-center md:text-left">
-            <h3 className="text-lg font-semibold mb-4">Connect With Us</h3>
+            <h3 className="text-lg font-semibold mb-4 text-foreground">Connect With Us</h3>
             <div className="flex justify-center md:justify-start space-x-4">
               <a 
-                href="https://effervescent-kelpie-55bd4d.netlify.app/" 
+                href="#" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-muted-foreground hover:text-primary transition-colors p-2 hover:bg-primary/10 rounded-lg"
+                aria-label="Instagram"
               >
-                <Globe className="w-6 h-6" />
+                <Instagram className="w-5 h-5" />
               </a>
               <a 
-                href="https://github.com/NdumisoButhelezi" 
+                href="#" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-muted-foreground hover:text-primary transition-colors p-2 hover:bg-primary/10 rounded-lg"
+                aria-label="Twitter"
               >
-                <Github className="w-6 h-6" />
+                <Twitter className="w-5 h-5" />
               </a>
               <a 
-                href="https://www.linkedin.com/company/planet-09-ai" 
+                href="#" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-muted-foreground hover:text-primary transition-colors p-2 hover:bg-primary/10 rounded-lg"
+                aria-label="GitHub"
               >
-                <Linkedin className="w-6 h-6" />
+                <Github className="w-5 h-5" />
+              </a>
+              <a 
+                href="#" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors p-2 hover:bg-primary/10 rounded-lg"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="w-5 h-5" />
               </a>
             </div>
           </div>
           <div className="text-center md:text-left">
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              <li><a href="/about" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Courses</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Competitions</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
+            <h3 className="text-lg font-semibold mb-4 text-foreground">Quick Links</h3>
+            <ul className="space-y-3">
+              <li><a href="/about" className="text-muted-foreground hover:text-primary transition-colors">Our Mission</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Learn to Code</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Events</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Resources</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Get Involved</a></li>
             </ul>
           </div>
         </div>
-        <div className="border-t border-gray-800 mt-6 md:mt-8 pt-6 md:pt-8 text-center text-gray-400">
-          <p>© {new Date().getFullYear()} PlutoDev. All rights reserved.</p>
+        <div className="border-t border-primary/20 mt-8 md:mt-12 pt-8 text-center">
+          <p className="text-muted-foreground">
+            © {new Date().getFullYear()} CodeSisters. Made with 💖 by women in tech.
+          </p>
         </div>
       </div>
     </footer>

@@ -47,24 +47,24 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-indigo-900 to-purple-900 text-white">
+    <section className="py-20 bg-gradient-to-br from-primary to-accent text-white">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div data-aos="fade-right">
-            <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
-            <p className="mb-8 text-indigo-100">Have questions about our AI learning platform? Send us a message and our team will get back to you.</p>
+            <h2 className="text-4xl font-bold mb-6">Get Involved</h2>
+            <p className="mb-8 text-pink-100 text-lg">Ready to join our amazing community of women in tech? Reach out and let's start building together!</p>
             <div className="space-y-4">
               <div className="flex items-center space-x-4">
-                <CheckCircle className="text-indigo-300" />
-                <span>24/7 Support for enrolled students</span>
+                <CheckCircle className="text-pink-200" />
+                <span>Mentorship from industry leaders</span>
               </div>
               <div className="flex items-center space-x-4">
-                <CheckCircle className="text-indigo-300" />
-                <span>Weekly live Q&A sessions</span>
+                <CheckCircle className="text-pink-200" />
+                <span>Weekly coding sessions & workshops</span>
               </div>
               <div className="flex items-center space-x-4">
-                <CheckCircle className="text-indigo-300" />
-                <span>Dedicated mentors for premium members</span>
+                <CheckCircle className="text-pink-200" />
+                <span>Supportive sisterhood community</span>
               </div>
             </div>
           </div>
@@ -77,7 +77,7 @@ const ContactSection = () => {
                   onChange={(e) => setEmail(e.target.value)}
                   type="email"
                   placeholder="Your email"
-                  className="bg-white/20 border-indigo-300 text-white placeholder:text-indigo-200"
+                  className="bg-white/20 border-pink-300 text-white placeholder:text-pink-200"
                   required
                 />
               </div>
@@ -85,12 +85,12 @@ const ContactSection = () => {
                 <Textarea
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
-                  placeholder="How can we help you with AI learning?"
-                  className="bg-white/20 border-indigo-300 text-white placeholder:text-indigo-200 min-h-[100px]"
+                  placeholder="Tell us about your coding journey or how you'd like to get involved!"
+                  className="bg-white/20 border-pink-300 text-white placeholder:text-pink-200 min-h-[100px]"
                   required
                 />
               </div>
-              <Button type="submit" className="w-full bg-white text-indigo-900 hover:bg-indigo-100" disabled={isSubmitting}>
+              <Button type="submit" className="w-full bg-white text-primary hover:bg-pink-50" disabled={isSubmitting}>
                 {isSubmitting ? "Sending..." : "Send Message"} <Send className="ml-2 w-4 h-4" />
               </Button>
               <p className="text-xs text-center text-indigo-200 mt-2">

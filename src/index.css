@@ -5,65 +5,77 @@
 
 @layer base {
   :root {
-    --background: 210 100% 98%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 0 0% 100%;
+    --foreground: 335 10% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 335 10% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 335 10% 20%;
 
-    --primary: 217 71% 53%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 335 78% 63%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 200 63% 90%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 335 25% 96%;
+    --secondary-foreground: 335 25% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 335 15% 95%;
+    --muted-foreground: 335 8% 45%;
 
-    --accent: 186 83% 85%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 214 100% 65%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 217 71% 53%;
+    --border: 335 20% 90%;
+    --input: 335 20% 90%;
+    --ring: 335 78% 63%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
+
+    /* CodeSisters Brand Colors */
+    --pink-primary: 335 78% 63%;      /* #FF5CA2 */
+    --blue-primary: 214 100% 65%;     /* #4F9DFF */
+    --lavender-light: 270 25% 95%;    /* Light lavender */
+    --pink-light: 335 40% 95%;        /* Light pink */
+    --blue-light: 214 50% 95%;        /* Light blue */
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--pink-primary)), hsl(var(--blue-primary)));
+    --gradient-soft: linear-gradient(135deg, hsl(var(--pink-light)), hsl(var(--blue-light)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--pink-primary) / 0.9), hsl(var(--blue-primary) / 0.9));
   }
  
   .dark {
-    --background: 217 33% 17%;
-    --foreground: 210 40% 98%;
+    --background: 335 15% 8%;
+    --foreground: 335 15% 95%;
  
-    --card: 217 33% 17%;
-    --card-foreground: 210 40% 98%;
+    --card: 335 15% 12%;
+    --card-foreground: 335 15% 95%;
  
-    --popover: 217 33% 17%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 335 15% 12%;
+    --popover-foreground: 335 15% 95%;
  
-    --primary: 217 71% 53%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 335 78% 63%;
+    --primary-foreground: 0 0% 100%;
  
-    --secondary: 212 45% 25%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 335 15% 18%;
+    --secondary-foreground: 335 15% 85%;
  
-    --muted: 217 33% 25%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 335 15% 15%;
+    --muted-foreground: 335 8% 60%;
  
-    --accent: 186 83% 25%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 214 100% 65%;
+    --accent-foreground: 0 0% 100%;
  
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 335 15% 95%;
  
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 217 71% 53%;
+    --border: 335 15% 20%;
+    --input: 335 15% 20%;
+    --ring: 335 78% 63%;
   }
 }
 
@@ -72,32 +84,39 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
-    background-image: url('https://images.unsplash.com/photo-1458668383970-8ddd3927deed?auto=format&fit=crop&w=2000&q=80');
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-color: rgba(240, 249, 255, 0.7);
-    background-blend-mode: overlay;
+    @apply bg-background text-foreground font-poppins;
+    background: linear-gradient(135deg, hsl(var(--pink-light) / 0.3), hsl(var(--blue-light) / 0.3));
   }
 }
 
 /* Custom animations */
 @keyframes float {
   0% {
-    transform: translateY(0px);
+    transform: translateY(0px) rotate(0deg);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-15px) rotate(5deg);
   }
   100% {
-    transform: translateY(0px);
+    transform: translateY(0px) rotate(0deg);
   }
 }
 
-.float-animation {
-  animation: float 5s ease-in-out infinite;
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes gentle-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.animate-gentle-bounce {
+  animation: gentle-bounce 2s ease-in-out infinite;
 }
 
 @keyframes shake {

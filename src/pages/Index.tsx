@@ -3,7 +3,9 @@ import { useState, useEffect } from "react";
 import ProgramAgreementDialog from "@/components/shared/ProgramAgreementDialog";
 import Navbar from "@/components/home/Navbar";
 import HeroSection from "@/components/home/HeroSection";
-import FeatureSection from "@/components/home/FeatureSection";
+import MissionSection from "@/components/home/MissionSection";
+import LearnSection from "@/components/home/LearnSection";
+import TestimonialsSection from "@/components/home/TestimonialsSection";
 import ContactSection from "@/components/home/ContactSection";
 import CTASection from "@/components/home/CTASection";
 import Footer from "@/components/home/Footer";
@@ -35,10 +37,11 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-indigo-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-pink-50 via-lavender-50 to-blue-50">
       <Helmet>
-        <title>PlutoDev - Learn & Build with AI</title>
-        <meta name="description" content="Learn AI & software development with our gamified platform" />
+        <title>CodeSisters | Empowering Women in Tech</title>
+        <meta name="description" content="CodeSisters is a vibrant space for women in technology to learn, grow, and connect. Join the sisterhood." />
+        <meta name="keywords" content="CodeSisters, women in tech, coding, female coders, programming community" />
       </Helmet>
       
       {/* Header */}
@@ -47,8 +50,14 @@ const Index = () => {
       {/* Hero Section */}
       <HeroSection onShowAgreement={() => setShowAgreement(true)} />
 
-      {/* Features Section */}
-      <FeatureSection />
+      {/* Mission Section */}
+      <MissionSection />
+      
+      {/* Learn to Code Section */}
+      <LearnSection />
+
+      {/* Testimonials Section */}
+      <TestimonialsSection />
       
       {/* Contact Form */}
       <ContactSection />

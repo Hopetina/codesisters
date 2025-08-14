@@ -47,7 +47,7 @@ function App() {
     <HelmetProvider>
       <Helmet>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <title>PlutoDev - Arctic Learning Zone</title>
+        <title>CodeSisters | Empowering Women in Tech</title>
       </Helmet>
       <Router>
         <Routes>
