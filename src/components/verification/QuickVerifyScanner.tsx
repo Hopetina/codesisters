@@ -128,7 +128,7 @@ const QuickVerifyScanner = () => {
       if (!match) {
         toast({
           title: "Invalid QR Code",
-          description: "This doesn't appear to be a valid PlutoDev verification code",
+          description: "This doesn't appear to be a valid CodeSisters verification code",
           variant: "destructive",
         });
         setLoading(false);

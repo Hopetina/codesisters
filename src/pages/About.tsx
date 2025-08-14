@@ -15,7 +15,7 @@ const About = () => {
             <div className="flex items-center space-x-2">
               <RocketIcon className="w-8 h-8 text-purple-600" />
               <span className="text-xl font-bold bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-500 text-transparent bg-clip-text">
-                PlutoDev
+                CodeSisters
               </span>
             </div>
             <Button
@@ -34,7 +34,7 @@ const About = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16" data-aos="fade-up">
             <h1 className="text-4xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-indigo-600 text-transparent bg-clip-text">
-              About PlutoDev
+              About CodeSisters
             </h1>
             <p className="text-xl text-gray-700">
               Where coding meets innovation, community, and continuous growth
@@ -46,7 +46,7 @@ const About = () => {
               <div>
                 <h2 className="text-2xl font-bold mb-4 text-purple-700">Our Mission</h2>
                 <p className="text-gray-700 mb-4">
-                  PlutoDev was founded with a single mission: to make learning software development accessible, 
+                  CodeSisters was founded with a single mission: to make learning software development accessible, 
                   engaging, and community-driven for everyone. We believe that the future belongs to those who understand 
                   how to create with code, and we're dedicated to ensuring that future is open to all.
                 </p>
@@ -75,7 +75,7 @@ const About = () => {
               <div>
                 <h2 className="text-2xl font-bold mb-4 text-purple-700">Our Community</h2>
                 <p className="text-gray-700 mb-4">
-                  PlutoDev isn't just a learning platform—it's a vibrant community of learners, educators, and tech enthusiasts. 
+                  CodeSisters isn't just a learning platform—it's a vibrant community of learners, educators, and tech enthusiasts. 
                   From beginners taking their first steps into programming to advanced practitioners pushing the boundaries of what's possible, 
                   our community is diverse, supportive, and united by a passion for technology.
                 </p>
@@ -112,7 +112,7 @@ const About = () => {
               <h2 className="text-2xl font-bold mb-6 text-purple-700">Join Our Journey</h2>
               <p className="text-gray-700 mb-8 max-w-2xl mx-auto">
                 Whether you're taking your first steps in programming or looking to advance your development expertise, 
-                PlutoDev offers the resources, community, and structure to help you succeed. Join us as we 
+                CodeSisters offers the resources, community, and structure to help you succeed. Join us as we 
                 build the future of coding education together.
               </p>
               <Button 
@@ -129,7 +129,7 @@ const About = () => {
       <footer className="bg-white border-t border-gray-100 mt-16">
         <div className="container mx-auto px-4 py-8">
           <div className="text-center text-gray-600">
-            <p>© {new Date().getFullYear()} PlutoDev. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} CodeSisters. All rights reserved.</p>
           </div>
         </div>
       </footer>

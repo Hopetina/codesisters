@@ -117,14 +117,14 @@ const DigitalIDCard = ({ user, submissions }: DigitalIDCardProps) => {
 
   return (
     <Card className="w-full bg-gradient-to-br from-white to-gray-50 border-2 border-gray-100 shadow-xl">
-      <CardHeader className="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-t-lg">
+      <CardHeader className="bg-gradient-to-r from-pink-500 to-pink-600 text-white rounded-t-lg">
         <CardTitle className="flex items-center gap-3 text-xl">
           <div className="p-2 bg-white/20 rounded-lg">
             <Award className="h-6 w-6" />
           </div>
           <div>
             <h2 className="text-xl font-bold">Professional Digital Credential</h2>
-            <p className="text-blue-100 text-sm font-medium">PlutoDev AI Development Program</p>
+            <p className="text-pink-100 text-sm font-medium">CodeSisters AI Development Program</p>
           </div>
         </CardTitle>
       </CardHeader>
@@ -252,9 +252,9 @@ const DigitalIDCard = ({ user, submissions }: DigitalIDCardProps) => {
         </div>
 
         {/* Digital ID Generation Section */}
-        <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg p-5 border border-blue-200">
+        <div className="bg-gradient-to-r from-pink-50 to-pink-100 rounded-lg p-5 border border-pink-200">
           <div className="flex items-center gap-2 mb-4">
-            <QrCode className="h-5 w-5 text-blue-600" />
+            <QrCode className="h-5 w-5 text-pink-600" />
             <h3 className="text-lg font-semibold text-gray-900">Digital Verification</h3>
           </div>
           
@@ -267,7 +267,7 @@ const DigitalIDCard = ({ user, submissions }: DigitalIDCardProps) => {
               
               <Dialog>
                 <DialogTrigger asChild>
-                  <Button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 shadow-lg">
+                  <Button className="w-full bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white font-semibold py-3 shadow-lg">
                     <QrCode className="h-5 w-5 mr-2" />
                     Generate Professional Digital ID
                   </Button>
@@ -297,7 +297,7 @@ const DigitalIDCard = ({ user, submissions }: DigitalIDCardProps) => {
                         {user.profile?.course || "AI Development Program Graduate"}
                       </p>
                       <p className="text-sm text-gray-600 bg-gray-50 px-4 py-2 rounded-lg">
-                        ✓ Verified by PlutoDev • Digital Skills Certified
+                        ✓ Verified by CodeSisters • Digital Skills Certified
                       </p>
                     </div>
                     <Button 

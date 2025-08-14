@@ -101,7 +101,7 @@ const Leaderboard = () => {
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center gap-4">
               <a href="/" className="text-xl font-semibold text-blue-600">
-                PLANET 09 AI WRITING
+                CODESISTERS PLATFORM
               </a>
             </div>
             <div className="flex items-center gap-2 sm:gap-4">

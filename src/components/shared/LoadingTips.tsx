@@ -6,7 +6,7 @@ const LoadingTips = () => {
   const [currentTip, setCurrentTip] = useState(0);
 
   const tips = [
-    "💡 Pro Tip: Complete all weekly challenges to unlock bonus points and exclusive PlutoDev badges!",
+    "💡 Pro Tip: Complete all weekly challenges to unlock bonus points and exclusive CodeSisters badges!",
     "🚀 Quick Win: Engage with 3+ peers on their projects each week to maximize your community score.",
     "⭐ Secret: The best submissions often include detailed learning reflections - judges love to see your thought process!",
     "🎯 Hack: Submit projects early in the week to get more peer feedback and improve your chances of approval.",
@@ -17,7 +17,7 @@ const LoadingTips = () => {
     "🎨 Creative Edge: Projects with good UI/UX design always score higher - invest time in making things look great!",
     "📈 Growth Hack: Track your progress weekly and celebrate small wins to maintain momentum throughout the program.",
     "🌟 Success Formula: Consistency beats perfection - submit something every week rather than waiting for the 'perfect' project.",
-    "🤝 Network Effect: The connections you make in PlutoDev often lead to job opportunities and collaboration projects."
+    "🤝 Network Effect: The connections you make in CodeSisters often lead to job opportunities and collaboration projects."
   ];
 
   useEffect(() => {
@@ -42,7 +42,7 @@ const LoadingTips = () => {
         </div>
         
         <div className="max-w-md mx-auto bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg border-l-4 border-purple-400">
-          <div className="text-sm font-medium text-purple-700 mb-2">💡 PlutoDev Pro Tip</div>
+          <div className="text-sm font-medium text-purple-700 mb-2">💡 CodeSisters Pro Tip</div>
           <p className="text-gray-700 text-sm leading-relaxed transition-all duration-500">
             {tips[currentTip]}
           </p>

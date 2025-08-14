@@ -44,7 +44,7 @@ const Register = () => {
 
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
       
-      const isAdmin = adminKey === "planet09admin";
+      const isAdmin = adminKey === "codesisters_admin";
       
       // Create user document with correct id field
       await setDoc(doc(db, "users", userCredential.user.uid), {
@@ -59,7 +59,7 @@ const Register = () => {
 
       toast({
         title: "Account created",
-        description: "Welcome to Planet 09 AI!",
+        description: "Welcome to CodeSisters!",
       });
 
       // Redirect based on admin status
@@ -113,7 +113,7 @@ const Register = () => {
           <a href="/" className="inline-flex items-center gap-2 mb-6 hover:opacity-80 transition-opacity">
             <RocketIcon className="h-8 w-8 text-purple-600" />
             <span className="text-2xl font-semibold bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-500 text-transparent bg-clip-text">
-              PlutoDev
+              CodeSisters
             </span>
           </a>
           <h1 className="text-3xl font-semibold tracking-tight">Create Account</h1>

@@ -101,11 +101,11 @@ const PublicShowcase = () => {
   };
 
   const handleShare = (submission: SubmissionWithUser, platform: 'facebook' | 'linkedin' | 'whatsapp' | 'copy') => {
-    const shareText = `🚀 Check out ${submission.user.name || 'this developer'}'s amazing ${getTaskDisplayName(submission.taskId)} from PlutoDev! 
+    const shareText = `🚀 Check out ${submission.user.name || 'this developer'}'s amazing ${getTaskDisplayName(submission.taskId)} from CodeSisters! 
 
 "${submission.learningReflection.substring(0, 150)}..."
 
-Discover talented developers at PlutoDev - where the next generation of tech talent is built! 💻✨`;
+Discover talented developers at CodeSisters - where the next generation of tech talent is built! 💻✨`;
     const shareUrl = window.location.href;
     
     switch (platform) {
@@ -113,7 +113,7 @@ Discover talented developers at PlutoDev - where the next generation of tech tal
         window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}&quote=${encodeURIComponent(shareText)}`, '_blank');
         break;
       case 'linkedin':
-        window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}&title=${encodeURIComponent(`Talented Developer: ${submission.user.name || 'PlutoDev'} | PlutoDev`)}&summary=${encodeURIComponent(shareText)}`, '_blank');
+        window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}&title=${encodeURIComponent(`Talented Developer: ${submission.user.name || 'CodeSisters'} | CodeSisters`)}&summary=${encodeURIComponent(shareText)}`, '_blank');
         break;
       case 'whatsapp':
         window.open(`https://wa.me/?text=${encodeURIComponent(shareText + '\n\n' + shareUrl)}`, '_blank');
@@ -139,7 +139,7 @@ Discover talented developers at PlutoDev - where the next generation of tech tal
   }
 
   if (selectedProject) {
-    const projectTitle = `${selectedProject.user.name || 'Developer'}'s Project | PlutoDev Talent Showcase`;
+    const projectTitle = `${selectedProject.user.name || 'Developer'}'s Project | CodeSisters Talent Showcase`;
     const projectDescription = `Discover ${selectedProject.user.name || 'this developer'}'s amazing ${getTaskDisplayName(selectedProject.taskId)} - ${selectedProject.learningReflection.substring(0, 150)}...`;
     
     return (
@@ -158,7 +158,7 @@ Discover talented developers at PlutoDev - where the next generation of tech tal
                   ← Back to Showcase
                 </Button>
                 <div className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-                  PlutoDev Talent
+                  CodeSisters Talent
                 </div>
               </div>
               <Link to="/register">
@@ -289,7 +289,7 @@ Discover talented developers at PlutoDev - where the next generation of tech tal
                 <h3 className="text-2xl font-bold mb-4">Interested in Hiring {selectedProject.user.name || "this Developer"}?</h3>
                 <p className="text-purple-100 mb-6 text-lg">
                   This developer has demonstrated exceptional skills and dedication through our comprehensive learning program.
-                  Connect with talented developers like {selectedProject.user.name || "them"} through PlutoDev.
+                  Connect with talented developers like {selectedProject.user.name || "them"} through CodeSisters.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
                   <Button size="lg" variant="secondary" asChild>
@@ -311,8 +311,8 @@ Discover talented developers at PlutoDev - where the next generation of tech tal
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       <Helmet>
-        <title>PlutoDev Talent Showcase - Discover Amazing Developers</title>
-        <meta name="description" content="Discover talented developers and their amazing projects at PlutoDev. See real portfolios from our learning community - perfect for employers and investors looking for fresh talent." />
+        <title>CodeSisters Talent Showcase - Discover Amazing Developers</title>
+        <meta name="description" content="Discover talented developers and their amazing projects at CodeSisters. See real portfolios from our learning community - perfect for employers and investors looking for fresh talent." />
       </Helmet>
       
       {/* Header */}
@@ -320,7 +320,7 @@ Discover talented developers at PlutoDev - where the next generation of tech tal
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-              PlutoDev Talent Showcase
+              CodeSisters Talent Showcase
             </div>
             <div className="flex gap-3">
               <Link to="/login">
@@ -477,7 +477,7 @@ Discover talented developers at PlutoDev - where the next generation of tech tal
           <p className="text-gray-600 mb-6 max-w-2xl mx-auto text-lg">
             These developers have completed rigorous training programs and demonstrated 
             real-world skills. Connect with them through our platform or partner with 
-            PlutoDev for your talent acquisition needs.
+            CodeSisters for your talent acquisition needs.
           </p>
           <div className="flex justify-center gap-4">
             <Button size="lg" asChild>

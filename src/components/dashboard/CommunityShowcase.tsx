@@ -100,7 +100,7 @@ const CommunityShowcase = () => {
   };
 
   const handleShare = (submission: SubmissionWithUser, platform: 'facebook' | 'linkedin' | 'whatsapp' | 'copy') => {
-    const shareText = `Check out ${submission.user.name}'s amazing ${getTaskDisplayName(submission.taskId)} on PlutoDev! 🚀\n\n"${submission.learningReflection.substring(0, 100)}..."\n\nJoin our coding community and start your development journey!`;
+    const shareText = `Check out ${submission.user.name}'s amazing ${getTaskDisplayName(submission.taskId)} on CodeSisters! 🚀\n\n"${submission.learningReflection.substring(0, 100)}..."\n\nJoin our coding community and start your development journey!`;
     const shareUrl = "https://planet-participation-hub.lovable.app";
     
     switch (platform) {
@@ -108,7 +108,7 @@ const CommunityShowcase = () => {
         window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}&quote=${encodeURIComponent(shareText)}`, '_blank');
         break;
       case 'linkedin':
-        window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}&title=${encodeURIComponent(`${submission.user.name}'s Project on PlutoDev`)}&summary=${encodeURIComponent(shareText)}`, '_blank');
+        window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}&title=${encodeURIComponent(`${submission.user.name}'s Project on CodeSisters`)}&summary=${encodeURIComponent(shareText)}`, '_blank');
         break;
       case 'whatsapp':
         window.open(`https://wa.me/?text=${encodeURIComponent(shareText + '\n' + shareUrl)}`, '_blank');

@@ -17,7 +17,7 @@ const UserAgreementDialog = ({ open, onOpenChange, onAccept }: UserAgreementDial
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto animate-in fade-in-0 zoom-in-95 duration-300">
         <DialogHeader className="space-y-4">
-          <DialogTitle className="text-2xl font-playfair">Planet 09 AI Participation Agreement</DialogTitle>
+          <DialogTitle className="text-2xl font-playfair">CodeSisters Participation Agreement</DialogTitle>
           <DialogDescription>
             <div className="prose prose-lg mt-4 space-y-6 text-gray-700">
               <h2 className="text-xl font-playfair text-blue-600">📅 Program Duration: March 2025 – April 2025</h2>
@@ -31,7 +31,7 @@ const UserAgreementDialog = ({ open, onOpenChange, onAccept }: UserAgreementDial
                     <li>Complete at least one (1) project within the 8-week period</li>
                     <li>Document the project's progress and final outcome</li>
                     <li>Create a short video (1–3 minutes) showcasing the project</li>
-                    <li>Post on social media using #Planet09AI</li>
+                    <li>Post on social media using #CodeSisters</li>
                   </ul>
                 </div>
 

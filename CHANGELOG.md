@@ -1,7 +1,7 @@
 
 # Changelog
 
-All notable changes and features implemented in the Planet 09 AI Writing platform.
+All notable changes and features implemented in the CodeSisters platform.
 
 ## [Current Version] - 2024-12-16
 

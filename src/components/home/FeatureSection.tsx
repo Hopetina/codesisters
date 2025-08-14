@@ -42,7 +42,7 @@ const FeatureSection = () => {
           className="text-2xl md:text-3xl font-bold text-center mb-3 md:mb-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-transparent bg-clip-text" 
           data-aos="fade-up"
         >
-          Why Choose Planet 09 AI?
+          Why Choose CodeSisters?
         </h2>
         <p 
           className="text-sm md:text-base text-gray-600 text-center mb-8 md:mb-12 max-w-2xl mx-auto" 
@@ -56,7 +56,7 @@ const FeatureSection = () => {
         <div className="mb-12 text-center" data-aos="fade-up">
           <img 
             src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" 
-            alt="Planet 09 AI Ecosystem" 
+            alt="CodeSisters Ecosystem" 
             className="max-w-full rounded-xl shadow-lg mx-auto"
           />
         </div>

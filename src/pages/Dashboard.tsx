@@ -131,7 +131,7 @@ const Dashboard = () => {
       
       toast({
         title: "Welcome aboard!",
-        description: "You've successfully joined Planet 09 AI program.",
+        description: "You've successfully joined CodeSisters program.",
       });
     } catch (error) {
       toast({

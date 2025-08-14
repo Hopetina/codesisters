@@ -102,7 +102,7 @@ const VerifyUser = () => {
         {/* Header */}
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">
-            PlutoDev Student Verification
+            CodeSisters Student Verification
           </h1>
           <p className="text-gray-600">Official Achievement Verification Portal</p>
         </div>
@@ -268,7 +268,7 @@ const VerifyUser = () => {
         {/* Verification Footer */}
         <div className="text-center mt-8 p-6 bg-white rounded-lg border">
           <p className="text-sm text-gray-600 mb-2">
-            This verification was generated on {new Date().toLocaleDateString()} by PlutoDev
+            This verification was generated on {new Date().toLocaleDateString()} by CodeSisters
           </p>
           <p className="text-xs text-gray-500">
             Verification ID: {hash} • For more info: planet-participation-hub.lovable.app

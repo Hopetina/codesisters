@@ -338,7 +338,7 @@ const Admin = () => {
           )}>
             <div className="flex items-center gap-2 sm:gap-4">
               <a href="/" className="text-lg sm:text-xl font-semibold text-blue-600">
-                PLANET 09 AI WRITING
+                CODESISTERS PLATFORM
               </a>
             </div>
             <div className="flex items-center gap-2 sm:gap-4">
