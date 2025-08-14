@@ -109,6 +109,7 @@ const CommunityShowcase = () => {
         break;
       case 'linkedin':
         window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}&title=${encodeURIComponent(`${submission.user.name}'s Project on CodeSisters`)}&summary=${encodeURIComponent(shareText)}`, '_blank');
+        window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}&title=${encodeURIComponent(`${submission.user.name}'s Project on CodeSisters`)}&summary=${encodeURIComponent(shareText)}`, '_blank');
         break;
       case 'whatsapp':
         window.open(`https://wa.me/?text=${encodeURIComponent(shareText + '\n' + shareUrl)}`, '_blank');

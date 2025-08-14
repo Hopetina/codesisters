@@ -1,6 +1,6 @@
 
 import React from "react";
-import { RocketIcon, ArrowLeft, Code, Users, Star, Award } from "lucide-react";
+import { Heart, ArrowLeft, Code, Users, Star, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 
@@ -8,8 +8,8 @@ const About = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-indigo-50 to-blue-50">
-      <header className="bg-white shadow-sm">
+    <div className="min-h-screen bg-gradient-to-br from-pink-50 via-purple-50 to-blue-50">
+      <header className="bg-white/90 backdrop-blur-md shadow-sm">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
@@ -21,7 +21,7 @@ const About = () => {
             <Button
               variant="ghost"
               onClick={() => navigate("/")}
-              className="flex items-center space-x-2 text-purple-600"
+              className="flex items-center space-x-2 text-primary hover:text-primary/80"
             >
               <ArrowLeft className="w-4 h-4" />
               <span>Back to Home</span>
@@ -36,8 +36,8 @@ const About = () => {
             <h1 className="text-4xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-indigo-600 text-transparent bg-clip-text">
               About CodeSisters
             </h1>
-            <p className="text-xl text-gray-700">
-              Where coding meets innovation, community, and continuous growth
+            <p className="text-xl text-muted-foreground">
+              Where women in tech find their tribe, grow their skills, and build their future
             </p>
           </div>
 
@@ -50,26 +50,26 @@ const About = () => {
                   engaging, and community-driven for everyone. We believe that the future belongs to those who understand 
                   how to create with code, and we're dedicated to ensuring that future is open to all.
                 </p>
-                <p className="text-gray-700">
-                  Through our gamified learning environment, we transform what could be a complex, isolating journey into 
-                  an exciting, collaborative adventure where peers learn from and compete with each other.
+                <p className="text-muted-foreground">
+                  Through our welcoming community, mentorship programs, and collaborative learning environment, we transform what can be an 
+                  intimidating tech landscape into an empowering sisterhood where everyone belongs.
                 </p>
               </div>
-              <div className="bg-white p-6 rounded-xl shadow-lg">
-                <RocketIcon className="w-16 h-16 text-purple-600 mx-auto mb-4" />
-                <h3 className="text-xl font-bold text-center mb-2 text-gray-800">Innovation-Driven</h3>
-                <p className="text-gray-600 text-center">
-                  We constantly evolve our platform to incorporate the latest development practices and teaching methodologies.
+              <div className="bg-white p-6 rounded-xl shadow-lg border border-primary/10">
+                <Heart className="w-16 h-16 text-primary mx-auto mb-4" />
+                <h3 className="text-xl font-bold text-center mb-2 text-foreground">Sisterhood-Driven</h3>
+                <p className="text-muted-foreground text-center">
+                  We foster a community where women support each other's growth, celebrate wins together, and create lasting professional relationships.
                 </p>
               </div>
             </section>
 
             <section className="grid md:grid-cols-2 gap-8 items-center" data-aos="fade-up">
-              <div className="bg-white p-6 rounded-xl shadow-lg md:order-first">
-                <Users className="w-16 h-16 text-purple-600 mx-auto mb-4" />
-                <h3 className="text-xl font-bold text-center mb-2 text-gray-800">Community-Centered</h3>
-                <p className="text-gray-600 text-center">
-                  Our platform thrives on collaboration. Students learn from experts and each other, building a network that extends beyond the classroom.
+              <div className="bg-white p-6 rounded-xl shadow-lg md:order-first border border-primary/10">
+                <Users className="w-16 h-16 text-accent mx-auto mb-4" />
+                <h3 className="text-xl font-bold text-center mb-2 text-foreground">Inclusive Community</h3>
+                <p className="text-muted-foreground text-center">
+                  Our platform thrives on collaboration. Sisters learn from experts and each other, building networks that extend far beyond our community.
                 </p>
               </div>
               <div>
@@ -79,8 +79,8 @@ const About = () => {
                   From beginners taking their first steps into programming to advanced practitioners pushing the boundaries of what's possible, 
                   our community is diverse, supportive, and united by a passion for technology.
                 </p>
-                <p className="text-gray-700">
-                  Through collaborative challenges, peer reviews, and community events, we foster connections that help everyone grow faster and 
+                <p className="text-muted-foreground">
+                  Through mentorship circles, collaborative projects, and community events, we foster connections that help everyone grow faster and 
                   reach higher than they could alone.
                 </p>
               </div>
@@ -88,22 +88,22 @@ const About = () => {
 
             <section className="grid md:grid-cols-2 gap-8 items-center" data-aos="fade-up">
               <div>
-                <h2 className="text-2xl font-bold mb-4 text-purple-700">Our Approach</h2>
-                <p className="text-gray-700 mb-4">
-                  Traditional education often falls short when it comes to emerging technologies. That's why we've 
-                  pioneered a learning approach that combines structured curriculum with competitive elements, real-world 
-                  projects, and community engagement.
+                <h2 className="text-2xl font-bold mb-4 text-primary">Our Approach</h2>
+                <p className="text-muted-foreground mb-4">
+                  Traditional tech education often overlooks the unique challenges women face in the industry. That's why we've 
+                  created a learning approach that combines technical skill building with confidence building, career guidance, 
+                  and authentic sisterhood support.
                 </p>
-                <p className="text-gray-700">
-                  By earning points, climbing leaderboards, and receiving immediate feedback, students stay motivated 
-                  while building a portfolio of work that demonstrates their abilities to future employers or clients.
+                <p className="text-muted-foreground">
+                  Through encouraging feedback, celebrating achievements, and providing safe spaces for questions, we help women 
+                  build not just coding skills but the confidence to thrive in their tech careers.
                 </p>
               </div>
-              <div className="bg-white p-6 rounded-xl shadow-lg">
-                <Award className="w-16 h-16 text-purple-600 mx-auto mb-4" />
-                <h3 className="text-xl font-bold text-center mb-2 text-gray-800">Achievement-Oriented</h3>
-                <p className="text-gray-600 text-center">
-                  We celebrate progress with a point system, leaderboards, and recognition that motivates continuous learning and improvement.
+              <div className="bg-white p-6 rounded-xl shadow-lg border border-primary/10">
+                <Award className="w-16 h-16 text-accent mx-auto mb-4" />
+                <h3 className="text-xl font-bold text-center mb-2 text-foreground">Growth-Oriented</h3>
+                <p className="text-muted-foreground text-center">
+                  We celebrate progress with mentorship opportunities, leadership roles, and recognition that motivates continuous learning and career advancement.
                 </p>
               </div>
             </section>
@@ -117,16 +117,16 @@ const About = () => {
               </p>
               <Button 
                 onClick={() => navigate("/register")} 
-                className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-full shadow-lg"
+                className="bg-gradient-to-r from-primary to-accent hover:shadow-xl transition-all hover:scale-105 text-white px-8 py-3 rounded-full shadow-lg"
               >
-                Begin Your Coding Journey
+                Join the Sisterhood
               </Button>
             </section>
           </div>
         </div>
       </main>
 
-      <footer className="bg-white border-t border-gray-100 mt-16">
+      <footer className="bg-white/90 backdrop-blur-md border-t border-primary/20 mt-16">
         <div className="container mx-auto px-4 py-8">
           <div className="text-center text-gray-600">
             <p>© {new Date().getFullYear()} CodeSisters. All rights reserved.</p>

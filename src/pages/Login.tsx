@@ -28,6 +28,7 @@ const Login = () => {
 
   const loadingTips = [
     "🚀 Welcome back to CodeSisters! Your coding journey continues...",
+    "🚀 Welcome back to CodeSisters! Your coding journey continues...",
     "💡 Pro Tip: Check out the Community Showcase for inspiration from fellow developers!",
     "⭐ Quick Reminder: Complete weekly challenges to earn bonus points and climb the leaderboard!",
     "🏆 Fun Fact: Our top students average 150+ points per week through consistent engagement!",
@@ -226,6 +227,7 @@ const Login = () => {
           <a href="/" className="inline-flex items-center gap-2 mb-6 hover:opacity-80 transition-opacity">
             <RocketIcon className="h-8 w-8 text-purple-600" />
             <span className="text-2xl font-semibold bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-500 text-transparent bg-clip-text">
+              CodeSisters
               CodeSisters
             </span>
           </a>

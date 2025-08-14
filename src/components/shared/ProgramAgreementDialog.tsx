@@ -12,7 +12,7 @@ const ProgramAgreementDialog = ({ open, onOpenChange }: ProgramAgreementDialogPr
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto animate-in fade-in-0 zoom-in-95 duration-300">
         <DialogHeader className="space-y-4">
-          <DialogTitle className="text-2xl font-playfair">CodeSisters Participation Agreement</DialogTitle>
+          <DialogTitle className="text-2xl font-bold">CodeSisters Participation Agreement</DialogTitle>
           <DialogDescription>
             <div className="prose prose-lg mt-4 space-y-6 text-gray-700">
               <h2 className="text-xl font-playfair text-purple-600">📅 Program Duration: March 2025 – April 2025</h2>

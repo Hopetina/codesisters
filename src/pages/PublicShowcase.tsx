@@ -114,6 +114,7 @@ Discover talented developers at CodeSisters - where the next generation of tech 
         break;
       case 'linkedin':
         window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}&title=${encodeURIComponent(`Talented Developer: ${submission.user.name || 'CodeSisters'} | CodeSisters`)}&summary=${encodeURIComponent(shareText)}`, '_blank');
+        window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}&title=${encodeURIComponent(`Talented Developer: ${submission.user.name || 'CodeSisters'} | CodeSisters`)}&summary=${encodeURIComponent(shareText)}`, '_blank');
         break;
       case 'whatsapp':
         window.open(`https://wa.me/?text=${encodeURIComponent(shareText + '\n\n' + shareUrl)}`, '_blank');
@@ -477,6 +478,7 @@ Discover talented developers at CodeSisters - where the next generation of tech 
           <p className="text-gray-600 mb-6 max-w-2xl mx-auto text-lg">
             These developers have completed rigorous training programs and demonstrated 
             real-world skills. Connect with them through our platform or partner with 
+            CodeSisters for your talent acquisition needs.
             CodeSisters for your talent acquisition needs.
           </p>
           <div className="flex justify-center gap-4">

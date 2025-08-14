@@ -6,13 +6,13 @@ const LoadingTips = () => {
   const [currentTip, setCurrentTip] = useState(0);
 
   const tips = [
-    "💡 Pro Tip: Complete all weekly challenges to unlock bonus points and exclusive CodeSisters badges!",
-    "🚀 Quick Win: Engage with 3+ peers on their projects each week to maximize your community score.",
+    "💡 Sister Tip: Complete all weekly challenges to unlock bonus points and exclusive CodeSisters badges!",
+    "🚀 Sisterhood Win: Engage with 3+ coding sisters on their projects each week to maximize your community score.",
     "⭐ Secret: The best submissions often include detailed learning reflections - judges love to see your thought process!",
     "🎯 Hack: Submit projects early in the week to get more peer feedback and improve your chances of approval.",
     "🏆 Elite Strategy: Combine multiple learning paths to create unique projects that stand out in the showcase.",
-    "💪 Power Move: Help other students in their learning journey - mentoring others earns you leadership points!",
-    "🔥 Hot Tip: Use the Community Showcase for inspiration, but always add your unique twist to projects.",
+    "💪 Power Move: Help other sisters in their learning journey - mentoring others earns you leadership points!",
+    "🔥 Hot Tip: Use the Sister Spotlight for inspiration, but always add your unique twist to projects.",
     "⚡ Speed Boost: Set up your development environment properly to code 3x faster than your peers.",
     "🎨 Creative Edge: Projects with good UI/UX design always score higher - invest time in making things look great!",
     "📈 Growth Hack: Track your progress weekly and celebrate small wins to maintain momentum throughout the program.",
@@ -32,8 +32,8 @@ const LoadingTips = () => {
     <div className="space-y-6 animate-pulse">
       <div className="text-center py-12">
         <div className="mb-6">
-          <div className="w-16 h-16 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full mx-auto flex items-center justify-center mb-4">
-            <span className="text-2xl text-white font-bold">P</span>
+          <div className="w-16 h-16 bg-gradient-to-r from-primary to-accent rounded-full mx-auto flex items-center justify-center mb-4">
+            <span className="text-2xl text-white font-bold">CS</span>
           </div>
           <h3 className="text-xl font-semibold text-gray-700 mb-2">Loading Amazing Content...</h3>
           <div className="w-32 h-2 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full mx-auto mb-6">
@@ -42,7 +42,7 @@ const LoadingTips = () => {
         </div>
         
         <div className="max-w-md mx-auto bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg border-l-4 border-purple-400">
-          <div className="text-sm font-medium text-purple-700 mb-2">💡 CodeSisters Pro Tip</div>
+          <div className="text-sm font-medium text-primary mb-2">💡 CodeSisters Sister Tip</div>
           <p className="text-gray-700 text-sm leading-relaxed transition-all duration-500">
             {tips[currentTip]}
           </p>
