@@ -228,7 +228,7 @@ const Login = () => {
             <RocketIcon className="h-8 w-8 text-purple-600" />
             <span className="text-2xl font-semibold bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-500 text-transparent bg-clip-text">
               CodeSisters
-              CodeSisters
+             
             </span>
           </a>
           <h1 className="text-3xl font-semibold tracking-tight">Welcome Back</h1>
